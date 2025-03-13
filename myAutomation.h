@@ -3,6 +3,7 @@
 AUTOSTART
 SET_TRACK(A,MAIN)
 SET_TRACK(B,PROG)
+CALL(1)
 DONE
 
 // Three PCA9685 boards
@@ -37,3 +38,19 @@ SERVO_TURNOUT(213, 113, 335, 270, Medium)
 ONSENSOR(TRN1_PIN)
   PRINT("Toggle Turnout 1")
   TOGGLE_TURNOUT(TRN1)
+
+ONBUTTON(51)
+  PRINT("Button Press")
+
+DONE
+
+SEQUENCE(1)
+  PRINT("Startup sequence")
+  IF(TRN1_PIN)
+    PRINT("Initial state b THROW")
+    THROW(TRN1)
+  ELSE
+    PRINT("Initial state b CLOSE")
+    CLOSE(TRN1)
+  ENDIF
+  RETURN
