@@ -18,6 +18,10 @@ ALIAS(TRN1_PWM, 100)
 
 // Trains
 ROSTER(8,"Class 08", "F0/F1/*F2/*F3/F4/F5/F6/F7/Mute/F9//")
+ROSTER(3,"Flying Scotsman", "")
+ROSTER(37,"Class 37", "")
+ROSTER(39,"Pendolino", "F0")
+ROSTER(713,"Class 66", "F0/F1/F2/F3/F4")
 
 // Turnouts
 SERVO_TURNOUT(TRN1, TRN1_PWM, 250, 300, Medium, "Servo 1")
