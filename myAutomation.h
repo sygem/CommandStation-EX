@@ -6,40 +6,10 @@ SET_TRACK(B,PROG)
 CALL(1)
 DONE
 
-// Aliases
-ALIAS(TRN1, 200)
-ALIAS(TRN1_PIN, 53)
-ALIAS(TRN1_PWM, 100)
-
-// Trains
-ROSTER(8,"Class 08", "F0/F1/*F2/*F3/F4/F5/F6/F7/Mute/F9//")
-ROSTER(3,"Flying Scotsman", "")
-ROSTER(37,"Class 37", "")
-ROSTER(39,"Pendolino", "Lights")
-ROSTER(713,"Class 66", "Lights/Engine/*Whistle/*Whistle2/*Brake")
-
-// Turnouts
-SERVO_TURNOUT(TRN1, TRN1_PWM, 250, 300, Medium, "Servo 1")
-SERVO_TURNOUT(201, 101, 250, 287, Medium)
-SERVO_TURNOUT(202, 102, 235, 282, Medium)
-SERVO_TURNOUT(203, 103, 290, 250, Medium)
-SERVO_TURNOUT(204, 104, 300, 335, Medium)
-SERVO_TURNOUT(205, 105, 304, 270, Medium)
-SERVO_TURNOUT(206, 106, 250, 308, Medium)
-SERVO_TURNOUT(207, 107, 350, 250, Medium)
-SERVO_TURNOUT(208, 108, 250, 285, Medium)
-SERVO_TURNOUT(209, 109, 265, 325, Medium)
-SERVO_TURNOUT(210, 110, 286, 255, Medium)
-SERVO_TURNOUT(211, 111, 310, 260, Medium)
-SERVO_TURNOUT(212, 112, 294, 330, Medium)
-SERVO_TURNOUT(213, 113, 335, 270, Medium)
-
-ONSENSOR(TRN1_PIN)
-  PRINT("Toggle Turnout 1")
-  TOGGLE_TURNOUT(TRN1)
-
-ONBUTTON(51)
-  PRINT("Button Press")
+#include "myAliases.h"
+#include "myTrains.h"
+#include "myTurnouts.h"
+#include "myControlPanel.h"
 
 DONE
 

@@ -1,0 +1,6 @@
+ONSENSOR(TRN1_PIN)
+  PRINT("Toggle Turnout 1")
+  TOGGLE_TURNOUT(TRN1)
+
+ONBUTTON(51)
+  PRINT("Button Press")

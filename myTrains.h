@@ -1,0 +1,10 @@
+// Trains
+ROSTER(8,"Class 08", "")
+ROSTER(3,"Flying Scotsman", "")
+ROSTER(13,"Class 13", "")
+ROSTER(37,"Class 37", "")
+ROSTER(39,"Pendolino", "Lights")
+ROSTER(43,"Class 43", "")
+ROSTER(47,"Class 47", "")
+ROSTER(55,"Class 55", "")
+ROSTER(713,"Class 66", "Lights/Engine/*Whistle/*Whistle2/*Brake")
