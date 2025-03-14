@@ -6,11 +6,6 @@ SET_TRACK(B,PROG)
 CALL(1)
 DONE
 
-// Three PCA9685 boards
-HAL(PCA9685, 100, 16, 0x40) // For servos
-HAL(PCA9685, 116, 16, 0x41, 1000) // Might need to move this to myHal.cpp to override the frequency
-HAL(PCA9685, 132, 16, 0x42, 1000)
-
 // Aliases
 ALIAS(TRN1, 200)
 ALIAS(TRN1_PIN, 53)
@@ -20,8 +15,8 @@ ALIAS(TRN1_PWM, 100)
 ROSTER(8,"Class 08", "F0/F1/*F2/*F3/F4/F5/F6/F7/Mute/F9//")
 ROSTER(3,"Flying Scotsman", "")
 ROSTER(37,"Class 37", "")
-ROSTER(39,"Pendolino", "F0")
-ROSTER(713,"Class 66", "F0/F1/F2/F3/F4")
+ROSTER(39,"Pendolino", "Lights")
+ROSTER(713,"Class 66", "Lights/Engine/*Whistle/*Whistle2/*Brake")
 
 // Turnouts
 SERVO_TURNOUT(TRN1, TRN1_PWM, 250, 300, Medium, "Servo 1")
