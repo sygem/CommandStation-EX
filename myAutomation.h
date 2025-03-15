@@ -12,13 +12,21 @@ DONE
 #include "myControlPanel.h"
 
 // Lights
-ONBUTTON(0)
-  IF(0)
-    UNLATCH(0)
-    FADE(0, 4095, 5000)
+ONBUTTON(52)
+  IF(52)
+    UNLATCH(52)
+    FADE(116, 4095, 5000)
+    FADE(117, 4095, 5000)
+    FADE(118, 4095, 5000)
+    FADE(119, 4095, 5000)
+    FADE(120, 4095, 5000)
   ELSE
-    LATCH(0)
-    FADE(0, 0, 5000)
+    LATCH(52)
+    FADE(116, 0, 1000)
+    FADE(117, 0, 1000)
+    FADE(118, 0, 1000)
+    FADE(119, 0, 1000)
+    FADE(120, 0, 1000)
   ENDIF
 
 DONE
