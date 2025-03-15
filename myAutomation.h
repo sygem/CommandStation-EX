@@ -10,34 +10,80 @@ DONE
 #include "myTrains.h"
 #include "myTurnouts.h"
 #include "myControlPanel.h"
-
-// Lights
-ONBUTTON(52)
-  IF(52)
-    UNLATCH(52)
-    FADE(116, 4095, 5000)
-    FADE(117, 4095, 5000)
-    FADE(118, 4095, 5000)
-    FADE(119, 4095, 5000)
-    FADE(120, 4095, 5000)
-  ELSE
-    LATCH(52)
-    FADE(116, 0, 1000)
-    FADE(117, 0, 1000)
-    FADE(118, 0, 1000)
-    FADE(119, 0, 1000)
-    FADE(120, 0, 1000)
-  ENDIF
+#include "myLights.h"
 
 DONE
 
 SEQUENCE(1)
   PRINT("Startup sequence")
   IF(TRN1_PIN)
-    PRINT("Initial state b THROW")
     THROW(TRN1)
   ELSE
-    PRINT("Initial state b CLOSE")
     CLOSE(TRN1)
   ENDIF
-  RETURN
+  IF(TRN2_PIN)
+    THROW(TRN2)
+  ELSE
+    CLOSE(TRN2)
+  ENDIF
+  IF(TRN3_PIN)
+    THROW(TRN3)
+  ELSE
+    CLOSE(TRN3)
+  ENDIF
+  IF(TRN4_PIN)
+    THROW(TRN4)
+  ELSE
+    CLOSE(TRN4)
+  ENDIF
+  IF(TRN5_PIN)
+    THROW(TRN5)
+  ELSE
+    CLOSE(TRN5)
+  ENDIF
+  IF(TRN6_PIN)
+    THROW(TRN6)
+  ELSE
+    CLOSE(TRN6)
+  ENDIF
+  IF(TRN7_PIN)
+    THROW(TRN7)
+  ELSE
+    CLOSE(TRN7)
+  ENDIF
+  IF(TRN8_PIN)
+    THROW(TRN8)
+  ELSE
+    CLOSE(TRN8)
+  ENDIF
+  IF(TRN9_PIN)
+    THROW(TRN9)
+  ELSE
+    CLOSE(TRN9)
+  ENDIF
+  IF(TRN10_PIN)
+    THROW(TRN10)
+  ELSE
+    CLOSE(TRN10)
+  ENDIF
+  IF(TRN11_PIN)
+    THROW(TRN11)
+  ELSE
+    CLOSE(TRN11)
+  ENDIF
+  IF(TRN12_PIN)
+    THROW(TRN12)
+  ELSE
+    CLOSE(TRN12)
+  ENDIF
+  IF(TRN13_PIN)
+    THROW(TRN13)
+  ELSE
+    CLOSE(TRN13)
+  ENDIF
+  IF(TRN14_PIN)
+    THROW(TRN14)
+  ELSE
+    CLOSE(TRN14)
+  ENDIF
+RETURN
