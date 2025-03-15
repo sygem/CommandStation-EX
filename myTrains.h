@@ -1,7 +1,7 @@
 // Trains
 ROSTER(8,"Class 08", "")
 ROSTER(3,"Flying Scotsman", "")
-ROSTER(13,"Class 13", "")
+ROSTER(13,"Class 08 (Green)", "")
 ROSTER(37,"Class 37", "")
 ROSTER(39,"Pendolino", "Lights")
 ROSTER(43,"Class 43", "")
