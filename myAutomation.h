@@ -11,6 +11,16 @@ DONE
 #include "myTurnouts.h"
 #include "myControlPanel.h"
 
+// Lights
+ONBUTTON(0)
+  IF(0)
+    UNLATCH(0)
+    FADE(0, 4095, 5000)
+  ELSE
+    LATCH(0)
+    FADE(0, 0, 5000)
+  ENDIF
+
 DONE
 
 SEQUENCE(1)
