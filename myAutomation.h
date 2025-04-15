@@ -16,7 +16,7 @@ DONE
 
 SEQUENCE(1)
   PRINT("Startup sequence")
-  IF(TRN1_PIN)
+  /*IF(TRN1_PIN)
     THROW(TRN1)
   ELSE
     CLOSE(TRN1)
@@ -85,5 +85,5 @@ SEQUENCE(1)
     THROW(TRN14)
   ELSE
     CLOSE(TRN14)
-  ENDIF
+  ENDIF*/
 RETURN
