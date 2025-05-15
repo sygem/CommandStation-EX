@@ -252,6 +252,10 @@ wifiSerialState WifiInterface::setup2(const FSH* SSid, const FSH* password,
     }
   } else if (!forceAP) {
       // SSID was configured, so we assume station (client) mode.
+      #ifdef WIFI_IP_ADDRESS
+        StringFormatter::send(wifiStream, F("AT+CIPSTA=\"%S\",\"%S\",\"%S\"\r\n"), F(WIFI_IP_ADDRESS), F(ROUTER_IP_ADDRESS), F(SUBNET_MASK));
+      	checkForOK(2000, true); // dont care if not supported
+      #endif
       if (oldCmd) {
 	      // AT command early version supports CWJAP/CWSAP
 	      StringFormatter::send(wifiStream, F("AT+CWJAP=\"%S\",\"%S\"\r\n"), SSid, password);
