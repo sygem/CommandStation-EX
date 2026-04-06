@@ -119,6 +119,8 @@
 #undef ONCLOCKTIME
 #undef ONCLOCKMINS
 #undef ONOVERLOAD
+#undef ONRAILSYNCON
+#undef ONRAILSYNCOFF
 #undef ONGREEN
 #undef ONRED
 #undef ONROTATE
@@ -217,7 +219,7 @@
 #define BROADCAST(msg)
 #define CALL(route)
 #define CLEAR_STASH(id)
-#define CLEAR_ALL_STASH(id)
+#define CLEAR_ALL_STASH
 #define CLOSE(id)
 #define CONFIGURE_SERVO(vpin,pos1,pos2,profile) 
 #define DCC_SIGNAL(id,add,subaddr)
@@ -288,6 +290,8 @@
 #define ONCLOCKTIME(hours,mins)
 #define ONCLOCKMINS(mins)
 #define ONOVERLOAD(track_id)
+#define ONRAILSYNCON
+#define ONRAILSYNCOFF
 #define ONDEACTIVATE(addr,subaddr)
 #define ONDEACTIVATEL(linear) 
 #define ONCLOSE(turnout_id)
