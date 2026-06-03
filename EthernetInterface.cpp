@@ -109,8 +109,10 @@ void EthernetInterface::setup()
     LCD(4,F("IP %d.%d.%d.%d:%d"), ip[0], ip[1], ip[2], ip[3], IP_PORT);    
   } 
   else { // LCDs generally too narrow, so take 2 lines
-    LCD(4,F("IP %d.%d.%d.%d"), ip[0], ip[1], ip[2], ip[3]);
-    LCD(5,F("Port %d"), IP_PORT);
+    LCD(4,F("IP:   %d.%d.%d.%d"), ip[0], ip[1], ip[2], ip[3]);
+    LCD(5,F("Port: %d"), IP_PORT);
+    LCD(6,F("Name: %s"), ETHERNET_HOSTNAME);
+    LCD(7,F("Ethernet OK"));
   }
  
   outboundRing=new RingStream(OUTBOUND_RING_SIZE);
