@@ -120,8 +120,8 @@
 #else
 // STANDARD shield on any Arduino Uno or Mega compatible with the original specification.
 #define STANDARD_MOTOR_SHIELD F("STANDARD_MOTOR_SHIELD"),                                                 \
-                              new MotorDriver(3, 12, UNUSED_PIN, 9, A0, 2.99, 1500, UNUSED_PIN), \
-                              new MotorDriver(11, 13, UNUSED_PIN, 8, A1, 2.99, 1500, UNUSED_PIN)
+                              new MotorDriver(3, 12, UNUSED_PIN, 9, A2, 5.02, 1500, UNUSED_PIN), \
+                              new MotorDriver(11, 13, UNUSED_PIN, 8, A3, 5.02, 1500, UNUSED_PIN)
 #define BRAKE_PWM_SWAPPED_MOTOR_SHIELD F("BPS_MOTOR_SHIELD"),                                       \
                               new MotorDriver(-9 , 12, UNUSED_PIN, -3, A0, 2.99, 1500, UNUSED_PIN), \
                               new MotorDriver(-8 , 13, UNUSED_PIN,-11, A1, 2.99, 1500, UNUSED_PIN)

@@ -385,7 +385,7 @@ class MotorDriver {
     
     // Trip current for programming track, 250mA. Change only if you really
     // need to be non-NMRA-compliant because of decoders that are not either.
-    static const int TRIP_CURRENT_PROG=250;
+    static const int TRIP_CURRENT_PROG=500;
     unsigned long power_sample_overload_wait = POWER_SAMPLE_OVERLOAD_WAIT;
     unsigned int power_good_counter = 0;
     TRACK_MODE trackMode = TRACK_MODE_NONE; // we assume track not assigned at startup
