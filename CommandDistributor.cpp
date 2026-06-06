@@ -368,7 +368,8 @@ void  CommandDistributor::broadcastPower() {
     broadcastReply(WITHROTTLE_TYPE, F("PPA%c\n"), main?'1': state);
 #endif
 #if defined(HAS_ENOUGH_MEMORY)
-    LCD(2,F("PWR %s%S"),state=='1'? "On" : ( state=='0'? "Off" : trackLetter ),reason);
+    //LCD(2,F("PWR %s%S"),state=='1'? "On" : ( state=='0'? "Off" : trackLetter ),reason);
+    LCD(2, F("Main %s : Prog %s"), main ? "ON" : "OFF", prog ? "ON" : "OFF");
 #else
     LCD(2,F("PWR %s%S"),trackLetter ,reason);
 #endif
