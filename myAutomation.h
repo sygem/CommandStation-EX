@@ -12,7 +12,7 @@ void displayMyRoster() {
         }
         
         if (cabid > 0) {
-            StringFormatter::lcd(line, F("(%04d) %S"), cabid, RMFT2::getRosterName(cabid));
+            StringFormatter::lcd(line, F("%04d %S"), cabid, RMFT2::getRosterName(cabid));
             line++;
         }
     }
