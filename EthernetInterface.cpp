@@ -182,6 +182,7 @@ void EthernetInterface::loop()
     if (Ethernet.linkStatus() == LinkOFF){
         if (warnedAboutLink) return;
         DIAG(F("Ethernet link OFF"));
+        LCD(7,F("Disconnected"));
         warnedAboutLink=true;
         return;
     }
@@ -190,6 +191,7 @@ void EthernetInterface::loop()
     // link status must be ok here 
     if (warnedAboutLink) {
       DIAG(F("Ethernet link RESTORED"));
+      LCD(7,F("Ethernet OK"));
       warnedAboutLink=false;
     } 
     
