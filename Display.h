@@ -45,7 +45,7 @@ public:
   #endif
 #endif
   static const int MAX_CHARACTER_COLS = MAX_MSG_SIZE;
-  static const long DISPLAY_SCROLL_TIME = 3000;  // 3 seconds
+  static const long DISPLAY_SCROLL_TIME = 4000;  // 4 seconds
 
 private:
   DisplayDevice *_deviceDriver;
