@@ -20,7 +20,7 @@ void displayMyRoster() {
 )
 
 AUTOSTART
-  HAL(UserAddin,displayMyRoster,60000)
+  HAL(UserAddin,displayMyRoster,120000)
   SET_TRACK(A,MAIN)
   SET_TRACK(B,PROG)
   CALL(1)
