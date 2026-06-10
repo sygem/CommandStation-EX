@@ -2,7 +2,7 @@
 ROSTER(8661,"Class 08", "")
 ROSTER(903,"Class 20 (Alison)", "")
 ROSTER(37,"Class 37 (EWS)", "")
-ROSTER(3740,"Class 37 (Railfreight)", "")
+ROSTER(3740,"Class 37 (Railfreight)", "/Engine/*Horn/*Horn 2/*Brakes/*Notch UP/*Notch DOWN/*Return to Idle/Thrash/Cold Start/Compressor/*Door/Fan/*Long Horn High/*Long Horn Low/Primer/Slow Flange/Spirax Valve/*Short Horn Low/*Short Horn High/*Wagons Buffering/*Wagons Clanging/*Door Slam/*Guard Whistle/*Loco Buffering")
 ROSTER(168,"Class 43", "")
 ROSTER(7079,"Class 47 (Railfreight)", "Lights/Cab")
 ROSTER(323,"Class 47 (Rover)", "")
