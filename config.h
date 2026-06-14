@@ -4,7 +4,7 @@
 #define SCROLLMODE 1
 
 #define  MY_L298_F439 F("MY_L298_F439"), \
- new MotorDriver( 3, 12, UNUSED_PIN, 9, A2, 0.73, 1500, UNUSED_PIN), \
+ new MotorDriver( 3, 12, UNUSED_PIN, 9, A2, 0.73, 2000, UNUSED_PIN), \
  new MotorDriver( 5, 13, UNUSED_PIN, 6, A3, 1.49, 1500, UNUSED_PIN)
 #define MOTOR_SHIELD_TYPE MY_L298_F439 
 #define LCD_DRIVER 0x27,20,4
