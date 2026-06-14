@@ -1,5 +1,6 @@
 #include "IODevice.h"
 #include "IO_PCF8575.h"
+#include "IO_HALDisplay.h"
 
 void halSetup() {
     PCA9685::create(1000, 16, 0x40);
@@ -13,6 +14,6 @@ void halSetup() {
 
     PCF8575::create(1112, 16, 0x23); // spare expander for future use.  Allocates pins 1112-1127.
 
-    HALDisplay<SH1107>::create(1, 0x27, 20, 4);
+    HALDisplay<OLED>::create(1, 0x3C, 128, 64);
 
 }
