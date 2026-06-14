@@ -14,20 +14,47 @@ SERVO_TURNOUT(TRN12, TRN12_PWM, 310, 260, Fast, "Servo 12")
 SERVO_TURNOUT(TRN13, TRN13_PWM, 294, 330, Medium, "Servo 13")
 SERVO_TURNOUT(TRN14, TRN14_PWM, 335, 270, Medium, "Servo 14")*/
 
-//<S 3000, 1000, 250, 300, Fast, "Turnout 1">
-//<S 3001, 1001, 250, 287, Fast, "Turnout 2">
-//<S 3002, 1002, 235, 282, Fast, "Turnout 3">
-//<S 3003, 1003, 290, 250, Fast, "Turnout 4">
-//<S 3004, 1004, 300, 335, Medium, "Turnout 5">
-//<S 3005, 1005, 304, 270, Medium, "Turnout 6">
-//<S 3006, 1006, 250, 308, Medium, "Turnout 7">
-//<S 3007, 1007, 350, 250, Medium, "Turnout 8">
-//<S 3008, 1008, 260, 220, Fast, "Turnout 9">
-//<S 3009, 1009, 315, 250, Fast, "Turnout 10">
-//<S 3010, 1010, 286, 255, Fast, "Turnout 11">
-//<S 3011, 1011, 310, 260, Fast, "Turnout 12">
-//<S 3012, 1012, 294, 330, Medium, "Turnout 13">
-//<S 3013, 1013, 335, 270, Medium, "Turnout 14">
+// <D SERVO 1000 250>
+// <T 3000 SERVO 1000 250 300 1>
+
+// <D SERVO 1001 250>
+// <T 3001 SERVO 1001 250 287 1>
+
+// <D SERVO 1002 235>
+// <T 3002 SERVO 1002 235 282 1>
+
+// <D SERVO 1003 290>
+// <T 3003 SERVO 1003 290 250 1>
+
+// <D SERVO 1004 300>
+// <T 3004 SERVO 1004 300 335 2>
+
+// <D SERVO 1005 304>
+// <T 3005 SERVO 1005 304 270 2>
+
+// <D SERVO 1006 250>
+// <T 3006 SERVO 1006 250 308 2>
+
+// <D SERVO 1007 350>
+// <T 3007 SERVO 1007 350 250 2>
+
+// <D SERVO 1008 260>
+// <T 3008 SERVO 1008 260 220 1>
+
+// <D SERVO 1009 315>
+// <T 3009 SERVO 1009 315 250 1>
+
+// <D SERVO 1010 286>
+// <T 3010 SERVO 1010 286 255 1>
+
+// <D SERVO 1011 310>
+// <T 3011 SERVO 1011 310 260 1>
+
+// <D SERVO 1012 294>
+// <T 3012 SERVO 1012 294 330 2>
+
+// <D SERVO 1013 335>
+// <T 3013 SERVO 1013 335 270 2>
 
 // TURNOUT 1
 ONTHROW(TRN1)
