@@ -1,3 +1,4 @@
+#if defined(ARDUINO_ARCH_STM32)
 #include "stm32f4xx_hal.h"
 
 #ifdef __cplusplus
@@ -37,4 +38,5 @@ void SystemClock_Config(void) {
 
 #ifdef __cplusplus
 }
+#endif
 #endif
