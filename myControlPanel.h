@@ -138,29 +138,29 @@ ROUTE(15, "Street Lights")
     PRINT("Button 15 OFF")
     RESET(CTRL_BTN_15V)
     RESET(CTRL_BTN_15L)
-    FADE(116, 0, 1000)
-    FADE(117, 0, 1000)
-    FADE(118, 0, 1000)
-    FADE(119, 0, 1000)
-    FADE(120, 0, 1000)
+    FADE(1016, 0, 1000)
+    FADE(1017, 0, 1000)
+    FADE(1018, 0, 1000)
+    FADE(1019, 0, 1000)
+    FADE(1020, 0, 1000)
   ELSE
     PRINT("Button 15 ON")
     SET(CTRL_BTN_15V)
     SET(CTRL_BTN_15L)
-    FADE(116, 4095, 5000)
-    FADE(117, 4095, 5000)
-    FADE(118, 4095, 5000)
-    FADE(119, 4095, 5000)
-    FADE(120, 4095, 5000)
+    FADE(1016, 4095, 5000)
+    FADE(1017, 4095, 5000)
+    FADE(1018, 4095, 5000)
+    FADE(1019, 4095, 5000)
+    FADE(1020, 4095, 5000)
   ENDIF
 DONE
 
-// 
+// Car Headlights
 ONBUTTON(CTRL_BTN_16)
   FOLLOW(16)
 DONE
 
-ROUTE(16, "Button 16")
+ROUTE(16, "Car Headlights")
   IF(CTRL_BTN_16V)
     PRINT("Button 16 OFF")
     RESET(CTRL_BTN_16V)
@@ -172,12 +172,12 @@ ROUTE(16, "Button 16")
   ENDIF
 DONE
 
-// Wind Turbine
+// 
 ONBUTTON(CTRL_BTN_17)
   FOLLOW(17)
 DONE
 
-ROUTE(17, "Wind Turbine")
+ROUTE(17, "")
   IF(CTRL_BTN_17V)
     PRINT("Button 17 OFF")
     RESET(CTRL_BTN_17V)
@@ -206,12 +206,12 @@ ROUTE(18, "BUTTON 18")
   ENDIF
 DONE
 
-// 
+// Wind Turbine
 ONBUTTON(CTRL_BTN_19)
   FOLLOW(19)
 DONE
 
-ROUTE(19, "BUTTON 19")
+ROUTE(19, "Wind Turbine")
   IF(CTRL_BTN_19V)
     PRINT("Button 19 OFF")
     RESET(CTRL_BTN_19V)
