@@ -129,3 +129,6 @@ ALIAS(WINDMILL, 1114)
 
 // Video Wall (Relay board pin 4)
 ALIAS(VIDEO_WALL, 1115)
+
+// Emergency Stop
+ALIAS(ESTOP, 1116)
