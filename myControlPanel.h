@@ -143,6 +143,7 @@ ROUTE(15, "Street Lights")
     FADE(1018, 0, 1000)
     FADE(1019, 0, 1000)
     FADE(1020, 0, 1000)
+    FADE(1031, 0, 1000)
   ELSE
     PRINT("Button 15 ON")
     SET(CTRL_BTN_15V)
@@ -152,6 +153,7 @@ ROUTE(15, "Street Lights")
     FADE(1018, 4095, 5000)
     FADE(1019, 4095, 5000)
     FADE(1020, 4095, 5000)
+    FADE(1031, 4095, 5000)
   ENDIF
 DONE
 
