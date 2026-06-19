@@ -66,6 +66,12 @@ SEQUENCE(1)
   RESET(CTRL_BTN_19V)
   RESET(CTRL_BTN_19L)
 
+  // Relays are active low, so set the pins high to turn them off.
+  SET(BUILDING_LIGHTS_1)
+  SET(BUILDING_LIGHTS_2)
+  SET(WINDMILL)
+  SET(VIDEO_WALL)
+
 RETURN
 
 ONBUTTON(1112)
